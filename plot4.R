@@ -30,7 +30,7 @@ png(filename = "plot4.png", width=480, height=480)
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
 with(dataFinal,{
   plot(DateTime, Global_active_power, type="l", col="black", xlab="", ylab = "Global Active Power")
-  plot(DateTime, Voltage, type="l", col="black", xlab="datetime", ylab = "Global Active Power")
+  plot(DateTime, Voltage, type="l", col="black", xlab="datetime", ylab = "Voltage")
   plot(DateTime, Sub_metering_1, type="l", xlab="", ylab = "Energy sub metering", col="black")
   lines(DateTime, Sub_metering_2, type="l", col="red")
   lines(DateTime, Sub_metering_3, type="l", col="blue")
